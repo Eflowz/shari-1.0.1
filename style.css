@@ -11,9 +11,10 @@
 }
 
   body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(232, 228, 228);
   }
   img {
+    margin: 10px;
     width: 100%;
   }
   header {

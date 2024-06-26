@@ -14,6 +14,7 @@
     background-color: rgb(232, 228, 228);
   }
   img {
+    margin: 10px;
     width: 100%;
   }
   header {
@@ -97,10 +98,10 @@
   .bout {
     padding: 60px;
   }
-
-
 .bout .contet h3 {
   color: #0d36a9;
+  text-align: center;
+  margin-bottom: 10px;
   }
 
   .bout .cont-left {
@@ -110,61 +111,210 @@
   .bout .contat-right {
     margin-left: 20px; 
   }
-
-
 .contet {
+    gap: 10px;
+    padding: 5px 10px 20px 40px;
+    margin-top: 40px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
-
 .cont-left,
 .contat-right {
-    width: 50%; 
+    width: 45%; 
 }
-
 /* shariz with the rotating waheva */
 .rotate-border {
   position: relative;
   margin-left: 100px;
+  font-size: 18px;
   color: #0d36a9;
-
 }
-
 .rotate-border::before {
   content: ""; 
   position: absolute; 
   top: 50%; 
   left: -10px; 
   width: 2px; 
-  height: 60px; 
-  background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 255, 0), rgb(0, 255, 0));
+  height: 50px; 
+  background-image: linear-gradient(to left, rgb(253, 253, 253), rgb(212, 0, 135), rgb(255, 255, 255));
   transform-origin: top left; 
   transform: rotate(90deg); 
 }
 
+/* featuredddddddddddddddd */
+.serser {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.norman {
+    gap: 10px;
+    padding: 5px 10px 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-left,
+.service-right {
+    width: 50%;
+}
+.ratat{
+    position: relative;
+    padding-left: 80px;
+    margin-left: 100px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #0d36a9;
+}
+.ratat::before {
+    content: ""; 
+    position: absolute; 
+    top: 80%; 
+    left: 65px; 
+    width: 2px; 
+    height: 45px; 
+    margin-top: 10px;
+    background-image: linear-gradient(to left, rgb(253, 253, 253), rgb(212, 0, 135), rgb(255, 255, 255));
+    transform-origin: top left; 
+    transform: rotate(180deg); 
+  }
+  .serser .mid {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .serser .norman h3 {
+  color: #0d36a9;
+  }
+  .serser .service-left {
+    border: 1px solid #060505;
+    padding: 10px;
+  }
+  .serser .service-right {
+    border: 1px solid #000000;
+    padding: 20px;
+  }
+.service-left p {
+    margin-bottom: 17px;
+}
 
 
+/* tooooooooooooolllllllllllssssssss */
+.tools {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+  }
+  .tools .clon {
+    color: #0d36a9;
+    font-weight: 600;
+    text-align: center;
+  }
+  .opening-hours {
+    display: flex;
+    align-items: center; 
+    padding-right: 20px;
+  }
+  .opening-hours .icon {
+    font-size: 35px; 
+    margin-right: 10px; 
+    margin-top: 30px;
+    color: rgb(226, 168, 10);
+  }
+  .opening-hours .text {
+    font-size: 17px;
+    color: #040303;
+  }
+  .phone-container {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;  
+  }
+  .phone-container .icon {
+    font-size: 30px; 
+    margin-right: 10px; 
+    margin-top: 30px;
+    color: rgb(226, 168, 10);
+  }
+  .phone-container .text {
+    font-size: 17px;
+    color: #333;
+  }
 
+  .locate {
+    display: flex;
+    align-items: center; 
+  }
+  .locate .icon {
+    font-size: 35px; 
+    margin-right: 10px; 
+    margin-top: 30px;
+    color: rgb(226, 168, 10);
+  }
+  
+  .involve {
+    margin-top: 30px;
+    background-color: rgb(226, 168, 10);
+    padding: 30px;
+  }
 
+  .Git {
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0d36a9;
+    font-weight: 600;
+    text-align: center;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .Git::before {
+      content: ""; 
+      position: absolute; 
+      top: 20%; 
+      left: 550px; 
+      width: 4px; 
+      height: 45px; 
+      margin-top: 10px;
+      background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(212, 0, 135), rgb(212, 255, 255));
+      transform-origin: top left; 
+      transform: rotate(90deg); 
+    }
+  
+  .title p{
+    font-size: 23px;
+    font-weight: 600;
+  }
+  
+  .typedText {
+    display: flex;
+    font-weight: 300;
+    font-size: 17px;
+  }
+  .typedText p {
+    font-weight: 400;
+    padding: 10px ;
+  }
+  
+  .bire {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+  }
+  
+  .bire .con {
+    background-color: #0d36a9;
+    color: #fff;
+    border-radius: 10px;
+    padding: 11px 10px;
+    cursor: pointer;
+  }
     /* the slider for the cards */
     .cardslide 
     {
+      margin-top: -44px;
         display: flex;
         justify-content: center;
+        height: auto;
         align-items: center;
     }
     .meet{
@@ -246,11 +396,6 @@
 
     /* swiper class */
 
-    /* .swiper-button-prev::after,
-    .swiper-button-prev::before {
-        content: '';
-    } */
-
     .swiper-button-next,
     .swiper-button-prev{
         width: initial;
@@ -266,7 +411,7 @@
         right: 0;
     }
     .swiper-pagination-bullet{
-        margin-top: 10rem;
+        /* margin-top: 10rem; */
         background-color: #675cff;
         opacity: 1;
     }
@@ -276,7 +421,6 @@
 
     
     /* foottttteeerrrr */
-
     footer .conta{
       background-color: #03185af9;
   }
@@ -317,7 +461,6 @@
       color: white;
       text-decoration: none;
       font-size: 16px;
-      opacity: 0.7;
       transition: 0.5s;
   }
   .footer-col ul li a:hover{
@@ -408,14 +551,22 @@
     .hamburger {
         display: block;
     }
+    .contet {
+        gap: 10px;
+        padding: 5px 5px;
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
   }
 
   @media (max-width: 768px) {
-    
+   
 .meet{
     font-size: 30px;
-    margin-left: 220px;
-    margin-top: 24px;
+    margin-left: 200px;
+    margin-top: -4px;
 }
 
 .card-content{
@@ -431,6 +582,27 @@
     margin-bottom: 25px;
     font-size: 12px;
 }
+.Git {
+  position: relative;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #0d36a9;
+  font-weight: 600;
+  text-align: center;
+}
+
+.Git::before {
+    content: ""; 
+    position: absolute; 
+    top: 20%; 
+    left: 210px; 
+    width: 4px; 
+    height: 45px; 
+    margin-top: 10px;
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(212, 0, 135), rgb(212, 255, 255));
+    transform-origin: top left; 
+    transform: rotate(90deg); 
+  }
 .footer-col ul li{
     padding: 5px 2px;
 }
@@ -469,6 +641,7 @@
     .card-data{
         padding: 1rem;
     }
+
   }
 
   /* large screen responsiveness */
@@ -485,8 +658,6 @@
         left: .5em;
     }
   }
-
-
   /* responsiveness for footer */
 @media (max-width: 600px){
     footer .row{
