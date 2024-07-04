@@ -94,97 +94,26 @@
     margin: 6px 0;
     background: #daf0f5;
   }
+
     .page{
-        background-color: #e09a02;
+        background-color: #025905;
         text-align: center;
+        color: #fff;
         padding: 200px ;
         font-size: 30px;
-        margin-bottom: 20px;
+        margin: 20px 30px;
     }
-.star {
-    display: grid;
-    width: 100%;
-    justify-content: center;
-    align-self: center;
-}
-.star .container{
-    padding: 30px 10px;
-}
-.star .container p{
-    flex-wrap: wrap;
-    padding: 40px 30px;
-    align-content: center;
-    justify-content: center;
-    /* text-align: center; */
-    width: auto;
-}
-.star .container button{
-    padding: 10px 20px;
-    background-color: #2a4291f9;
-    border-radius: 10px;
-    color: #fff;
-    margin-left: 30px;
-}
-.star .container h1 {
-    text-align: center;
-    color: #2a4291f9;
-}
 
-.rotate-border {
-    position: relative;
-    margin-left: 100px;
-    color: #2a4291f9;
-    text-align: center;
-    
-  }
-  .rotate-border::before {
-    content: ""; 
-    position: absolute; 
-    top: 50%; 
-    left: 420px; 
-    width: 2px; 
-    height: 50px; 
-    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(212, 0, 135), rgb(212, 255, 255));
-    transform-origin: top left; 
-    transform: rotate(90deg); 
-  }
 
-  .colabo {
-    position: relative;
-    margin-left: 100px;
-    color: #2a4291f9;
-    text-align: center;
-    
-  }
-  .colabo::before {
-    content: ""; 
-    position: absolute; 
-    top: 50%; 
-    left: 375px; 
-    width: 2px; 
-    height: 50px; 
-    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(212, 0, 135), rgb(212, 255, 255));
-    transform-origin: top left; 
-    transform: rotate(90deg); 
-  }
-  .investo {
-    position: relative;
-    margin-left: 100px;
-    color: #2a4291f9;
-    text-align: center;
-    
-  }
-  .investo::before {
-    content: ""; 
-    position: absolute; 
-    top: 50%; 
-    left: 355px; 
-    width: 2px; 
-    height: 50px; 
-    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(212, 0, 135), rgb(212, 255, 255));
-    transform-origin: top left; 
-    transform: rotate(90deg); 
-  }
+
+
+
+
+
+
+
+
+
   
     /* foottttteeerrrr */
 
@@ -321,54 +250,6 @@
   }
 
   @media (max-width: 768px) {
-    .rotate-border::before {
-        content: ""; 
-        position: absolute; 
-        top: 50%; 
-        left: 70px; 
-        width: 2px; 
-        height: 50px; 
-        background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(212, 0, 135), rgb(212, 255, 255));
-        transform-origin: top left; 
-        transform: rotate(90deg); 
-  }
-  .colabo {
-    position: relative;
-    margin-left: 100px;
-    color: #2a4291f9;
-    text-align: center;
-    
-  }
-  .colabo::before {
-    content: ""; 
-    position: absolute; 
-    top: 50%; 
-    left: 30px; 
-    width: 2px; 
-    height: 50px; 
-    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(212, 0, 135), rgb(212, 255, 255));
-    transform-origin: top left; 
-    transform: rotate(90deg); 
-  }
-  .investo {
-    position: relative;
-    margin-left: 100px;
-    color: #2a4291f9;
-    text-align: center;
-    
-  }
-  .investo::before {
-    content: ""; 
-    position: absolute; 
-    top: 50%; 
-    left: 12px; 
-    width: 2px; 
-    height: 50px; 
-    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(212, 0, 135), rgb(212, 255, 255));
-    transform-origin: top left; 
-    transform: rotate(90deg); 
-  }
-
 .latest{
     color: white;
     margin-bottom: 25px;
@@ -420,8 +301,4 @@
         width: 100%;
         
     }
-}
-
-@media (max-width: 768px) {
-
 }
