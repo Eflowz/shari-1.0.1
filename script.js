@@ -60,7 +60,7 @@ let swiperCards = new Swiper('.card-content', {
             slidesPerView: 2,
         },
         968: {
-            slidesPerView: 3,
+            slidesPerView: 4,
         }
     }
 });

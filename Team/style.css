@@ -20,7 +20,7 @@
     width: 100%;
     height: 98px;
     display: flex;
-    background-color: #2a4291f9;
+    background-color: #03185af9;
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
@@ -45,15 +45,15 @@
     transition: all 0.5s ease;
     padding: 5px 10px;
     border-radius: 10px; 
-    outline: 2px solid #ff6347; 
+    outline: 2px solid #ffc001;
     outline-offset: 5px;
   }
   
   .main a:hover {
-    background-color: #83730d; 
-    color: #333; 
+    background-color: #ffc001; 
+    color: #03185af9; 
     outline-color: #fff; 
-  }
+    }
   
   nav .logo {
     display: none;
@@ -71,8 +71,8 @@
     border-radius: 30px;
   }
   nav ul li a:hover {
-    background: #83730d;   
-  }
+    background: #b4aaa8;   
+}
   
   .hamburger {
     display: none;
@@ -83,10 +83,10 @@
     transition: 0.2s;
   }
   .hamburger:hover {
-    background-color: #83730d; 
+    background-color: #ffc001; 
     color: #996969; 
     outline-color: #f33e3e; 
-}
+    }
     .hamburger div {
     width: 26px;
     height: 2px;
@@ -101,6 +101,12 @@
     max-width: 100%;
     justify-content: center;
     align-items: center;
+}
+.tex  img{
+  width: 200px;
+    border-radius: 20%;
+    object-fit: cover;
+    height: 230px;
 }
 
 .texi img{
@@ -230,107 +236,570 @@
 
 
 
+    @media (max-width: 768px) {
+        header {
+            max-width: 100%;
+            padding: 0 20px;
+        }
+        nav {
+            position: absolute;
+            left: -400px;
+            top: 0;
+            z-index: 999;
+            width: 350px;
+            height: 100vh;
+            background-color: #03185af9;
+            transition: 0.4s ease;
+            box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.05);
+        }
+        #nav_check:checked ~ nav {
+            left: 0;
+        }
+        nav .logo {
+            display: block;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+        }
+        nav ul li a {
+            margin-bottom: 5px;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        nav ul {
+            display:block;
+            padding: 0 20px;
+            margin-top: 30px;
+        }
+        .hamburger {
+            display: block;
+        }
+        .main {
+            padding-left: 300px;
+            display: flex;
+            align-items: center;
+            }
+      .main a {
+          margin-right: 25px;
+          margin-left: 10px;
+          color: #fff;
+          font-size: 1.1rem;
+          font-weight: 500;
+          transition: all 0.5s ease;
+          padding: 5px 10px;
+          border-radius: 10px; 
+          outline: 2px solid #ffc001;; 
+          outline-offset: 5px;
+          }
+          
+.teemah{
+  margin: 30px 20px;
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.tex  img{
+  width: 200px;
+  border-radius: 10%;
+  object-fit: cover;
+  height: 230px;
+}
+.texi img{
+  width: 200px;
+  border-radius: 10%;
+  object-fit: cover;
+  height: 230px;
+  }
 
-    
-  /* responsiveness for navbar */
-  @media only screen and (max-width: 1100px) {
-    .main {
-    display: flex;
-    align-items: center;
-    margin-left: 280px;
-    }
-    header {
-        width: 100%;
-        padding: 0 20px;
-    }
-    nav {
+.textio{
+  padding-left: 10px;
+  width: 70%;
+}
+.textio p{
+  width: 100%;
+  font-size: 16px;
+}
+
+.textio h1{
+  color: #2a4291f9;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.socials{
+  display: flex;
+}
+.socials{
+  margin-top: 10px;
+      display: inline-block;
+      color: white;
+      font-size: 17px;
+      transition: 0.5s;
+  }
+  .socials a {
+      font-size: 25px;
+      margin: 2px;
+      color: #000;
+      text-decoration: none;
+}
+
+.socials a:hover{
+  color: #ffbf0099;
+}
+
+      
+      .latest{
+        color: white;
+        margin-bottom: 25px;
+        font-size: 12px;
+      }
+      .footer-col ul li{
+        padding: 5px 2px;
+      }
+      .footer-col ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        transition: 0.5s;
+      }
+      .footer-col h4{
+        color: white;
+        margin-bottom: 25px;
+        font-size: 15px;
+        margin-top: 30px;
+        margin: 10px;
+      }
+      .footer-col input{
+        border: none;
+        width: 200px;
+        height: 45px;
+        display: block;
+        padding-left: 0;
+        margin: 14px 0;
+      }
+      
+      .footer-col .inputSubmit{
+        padding: 0px 20px;
+        background-color: #ffbf0099;
+        border: none;
+        color: white;
+      }
+      }
+      
+      /* for mobbbbbilllllllllllllleeeeeeeeeeeeeeeeee  */
+      
+      @media only screen and (max-width: 425px) {
+        
+        .logo {
+            width: 60px;
+            height: 90px;
+            position: absolute;
+            left: 2.7%;
+            margin-top: 10px;
+        }
+        
+      nav {
         position: absolute;
-        left: -300px;
+        left: -400px;
         top: 0;
         z-index: 999;
+        color: #fff;
         width: 280px;
-        height: 87.8vh;
-        color: #000;
-        background-color: #fefefe;
+        height: 105vh;
+        background-color: #03185af9;
         transition: 0.4s ease;
         box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.05);
-    }
-    #nav_check:checked ~ nav {
+      }
+      #nav_check:checked ~ nav {
         left: 0;
-    }
-    nav .logo {
-        display: block;
-        height: 70px;
-        display: flex;
-        align-items: center;
-        margin-left: 30px;
-    }
-    nav ul li a {
+      }
+      nav ul li a {
         margin-bottom: 5px;
         padding: 10px 15px;
         border-radius: 5px;
-        color: #000;
-    }
-    nav ul {
-        display:block;
-        padding: 0 20px;
-        margin-top: 30px;
-    }
-    .hamburger {
-        display: block;
-    }
-  }
+      }
+      
+        .main {
+            display: flex;
+            width: 100%;
+            position: relative;
+            right: 30%;
+            text-align: center;
+        }
+      
+        .main a {
+            margin: 0 9px ;
+            color: #fff;    
+            margin-top: 30px;
+            margin-bottom: 30px;
+            padding: 5px 12px 2px -1px;
+            text-align: center;
+            justify-content: center;
+            align-self: center;
+            align-content: center;
+            font-size: 13px;
+        }
+        .hamburger {
+            display: block;
+            position: absolute;
+            right: 3.8%;
+            margin-top: 3px;
+        }
+        .hamburger + .main {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        nav ul li {
+            margin: 10px 0;
+        }
+      
+        nav ul li a {
+            margin: 0;
+            padding: 10px 20px;
+        } 
+        .hamburger.active + nav ul {
+            display: flex;
+        }
+    
+        .teemah{
+          margin: 10px 20px;
+          display: flex;
+          max-width: 100%;
+          gap: 30px;
+          justify-content: center;
+          align-items: center;
+        }
+        .tex  img{
+          width: 100%;
+          border-radius: 10%;
+          margin-bottom: 250px;
+          object-fit: cover;
+          height: 230px;
+        }
 
-  @media (max-width: 768px) {
-.latest{
-    color: white;
-    margin-bottom: 25px;
-    font-size: 12px;
-}
-.footer-col ul li{
-    padding: 5px 2px;
-}
-.footer-col ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-    transition: 0.5s;
-}
-.footer-col h4{
-    color: white;
-    margin-bottom: 25px;
-    font-size: 15px;
-    margin-top: 30px;
-    margin: 10px;
-}
-.footer-col input{
-    border: none;
-    width: 200px;
-    height: 45px;
-    display: block;
-    padding-left: 0;
-    margin: 14px 0;
-}
-.footer-col .inputSubmit{
-    padding: 0px 20px;
-    background-color: #ffbf0099;
-    border: none;
-    color: white;
-}
-    }
-  /* responsiveness for footer */
-@media (max-width: 600px){
-    footer .row{
-        flex-direction: column;
-        padding: 30px 60px;
-    }
-
-    footer .footer-col ul{
-        margin-left: 20px;
-        margin-bottom: 20px;
-    }
-    .footer-col input{
-        width: 100%;
+        .texi img{
+          width: 100%;
+          border-radius: 10%;
+          margin-bottom: 380px;
+          object-fit: cover;
+          height: 230px;
+          }
         
+        .textio{
+          padding-left: 10px;
+          width: 70%;
+        }
+        
+        .textio h1{
+          color: #2a4291f9;
+          margin-top: 5px;
+          margin-bottom: 10px;
+        }
+      
+      .latest{
+      color: white;
+      margin-bottom: 25px;
+      font-size: 12px;
+      }
+      .footer-col ul li{
+      padding: 5px 2px;
+      }
+      .footer-col ul li a{
+      color: white;
+      text-decoration: none;
+      font-size: 12px;
+      transition: 0.5s;
+      }
+      .footer-col h4{
+      color: white;
+      margin-bottom: 25px;
+      font-size: 15px;
+      margin-top: 30px;
+      margin: 10px;
+      }
+      .footer-col input{
+      border: none;
+      width: 200px;
+      height: 45px;
+      display: block;
+      padding-left: 0;
+      margin: 14px 0;
+      }
+      
+      .footer-col .inputSubmit{
+      padding: 0px 20px;
+      background-color: #ffbf0099;
+      border: none;
+      color: white;
+      }
+      .socialIcons {
+        margin-top: 5px;
+      }
+      }
+      
+      
+      @media only screen and (max-width: 375px) {
+      
+      .logo {
+        width: 60px;
+        height: 90px;
+        position: absolute;
+        left: 2.7%;
+        margin-top: 10px;
+      }
+      .main {
+        display: flex;
+        width: 100%;
+        position: relative;
+        right: 42%;
+        text-align: center;
+      }
+      
+      .main a {
+        margin: 0 9px ;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 5px 12px 2px -1px;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+        align-content: center;
+        font-size: 10px;
+      }
+      nav {
+        position: absolute;
+        left: -400px;
+        top: 0;
+        z-index: 999;
+        width: 270px;
+        height: 105vh;
+        background-color: #03185af9;
+        transition: 0.4s ease;
+        box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.05);
+      }
+      #nav_check:checked ~ nav {
+        left: 0;
+      }
+      .hamburger {
+        display: block;
+        position: absolute;
+        right: 3.8%;
+        margin-top: 3px;
+      }
+      
+      .hamburger + .main {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+      
+      nav ul li a {
+        margin: 0;
+        padding: 10px 20px;
+      }
+      
+      .hamburger.active + nav ul {
+        display: flex;
     }
-}
+    .teemah{
+      margin: 10px 10px;
+      display: flex;
+      max-width: 100%;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+    .tex  img{
+      width: 100%;
+      border-radius: 10%;
+      margin-bottom: 280px;
+      object-fit: cover;
+      height: 230px;
+    }
+
+    .texi img{
+      width: 100%;
+      border-radius: 10%;
+      margin-bottom: 480px;
+      object-fit: cover;
+      height: 230px;
+      }
+    
+    .textio{
+      padding-left: 10px;
+      width: 70%;
+    }
+    
+    .textio h1{
+      color: #2a4291f9;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+    
+    }
+      
+      @media only screen and (max-width: 320px) {
+      
+      .logo {
+        width: 60px;
+        height: 90px;
+        position: absolute;
+        left: 2.7%;
+        margin-top: 10px;
+      }
+      nav {
+        position: absolute;
+        left: -400px;
+        top: 0;
+        z-index: 999;
+        width: 200px;
+        height: 105vh;
+        background-color: #03185af9;
+        transition: 0.4s ease;
+        box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.05);
+      }
+      #nav_check:checked ~ nav {
+        left: 0;
+      }
+      .main {
+        display: flex;
+        width: 100%;
+        position: relative;
+        right: 69%;
+        text-align: center;
+      }
+      
+      .main a {
+        margin: 0 9px ;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 5px 12px 2px -1px;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+        align-content: center;
+        font-size: 10px;
+      }
+      
+      .hamburger {
+        display: block;
+        position: absolute;
+        right: 3.8%;
+        margin-top: 3px;
+      }
+      
+      .hamburger + .main {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+      
+      nav ul li {
+        margin: 10px 0;
+      }
+      
+      nav ul li a {
+        margin: 0;
+        padding: 10px 20px;
+      }
+      
+      .hamburger.active + nav ul {
+        display: flex;
+      }
+      .teemah{
+        margin: 20px 13px;
+        display: flex;
+        max-width: 100%;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+      .tex  img{
+        width: 100%;
+        border-radius: 10%;
+        margin-bottom: 310px;
+        object-fit: cover;
+        height: 230px;
+      }
+  
+      .texi img{
+        width: 100%;
+        border-radius: 10%;
+        margin-bottom: 550px;
+        object-fit: cover;
+        height: 230px;
+        }
+      
+      .textio{
+        padding-left: 10px;
+        width: 70%;
+      }
+      
+      .textio h1{
+        color: #2a4291f9;
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+      .textio p{
+        margin-top: 5px;
+        font-size: 14px;
+      }
+      .latest{
+      color: white;
+      margin-bottom: 25px;
+      font-size: 12px;
+      }
+      .footer-col ul li{
+      padding: 5px 2px;
+      }
+      .footer-col ul li a{
+      color: white;
+      text-decoration: none;
+      font-size: 12px;
+      transition: 0.5s;
+      }
+      .footer-col h4{
+      color: white;
+      margin-bottom: 25px;
+      font-size: 15px;
+      margin-top: 30px;
+      margin: 10px;
+      }
+      .footer-col input{
+      border: none;
+      width: 200px;
+      height: 45px;
+      display: block;
+      padding-left: 0;
+      margin: 14px 0;
+      }
+      
+      .footer-col .inputSubmit{
+      padding: 0px 20px;
+      background-color: #ffbf0099;
+      border: none;
+      color: white;
+      }
+      }
+      /* responsiveness for footer */
+      
+      @media (max-width: 600px){
+      footer .row{
+          flex-direction: column;
+          padding: 30px 60px;
+      }
+      
+      footer .footer-col ul{
+          margin-left: 20px;
+          margin-bottom: 20px;
+      }
+      .footer-col input{
+          width: 100%;
+          
+      }
+      }
