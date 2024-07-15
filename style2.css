@@ -962,8 +962,8 @@
 }
 }
 
-@media only screen and (max-width: 418px) {
-    
+
+@media (min-width: 376px) and (max-width: 424px) {    
     .logo {
         width: 60px;
         height: 90px;
@@ -997,7 +997,7 @@ nav ul li a {
         display: flex;
         width: 100%;
         position: relative;
-        right: 33%;
+        right: 45%;
         text-align: center;
     }
 
@@ -1041,7 +1041,7 @@ nav ul li a {
     }
 }
 
-@media only screen and (max-width: 394px) {
+/* @media only screen and (max-width: 357px) {
     
     .logo {
         width: 60px;
@@ -1118,7 +1118,7 @@ nav ul li a {
     .hamburger.active + nav ul {
         display: flex;
     }
-}
+} */
 
 @media only screen and (max-width: 375px) {
     
