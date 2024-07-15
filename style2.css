@@ -962,7 +962,7 @@
 }
 }
 
-@media only screen and (max-width: 405px) {
+@media only screen and (max-width: 418px) {
     
     .logo {
         width: 60px;
@@ -997,7 +997,7 @@ nav ul li a {
         display: flex;
         width: 100%;
         position: relative;
-        right: 39%;
+        right: 33%;
         text-align: center;
     }
 
