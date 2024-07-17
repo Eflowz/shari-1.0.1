@@ -6,6 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     list-style: none;
+    scroll-behavior: smooth;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     }
@@ -172,7 +173,7 @@
             padding: 30px ;
         }
         #item1 {
-            height: 490px;
+            height: 370px;
             width: auto;
             border-radius: 15px;
             outline: 2px solid #ffc001;;
@@ -657,27 +658,26 @@
         cursor: pointer;
     }
     .containe {
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        margin-top: 4em; 
-        display: flex;
-        gap: 20px;
-        padding: 10px 30px;
+        margin-top: 10px;  
     }
-  #item1 {
-    height: 490px;
-    width: auto;
-    border-radius: 15px;
-    width: 250px;
-    outline: 2px solid #ffc001;;
-  }
-  .contact {
+        #item1 {
+        height: auto;
+        width: 350px;
+        border-radius: 17px;
+        object-position: center;
+        outline: 2px solid #ff6347;
+    }
+    .contact {
     width: 100%;
     color: #000;
     font-size: 15px;
     font-weight: 600;
-    font-weight: 600;
     margin-left: 20px;
-  }
+    }
+
   .down {
     padding: 20px;
   }
@@ -894,7 +894,7 @@
         margin-top: 10px;  
     }
         #item1 {
-        height: 400px;
+        height: 360px;
         width: auto;
         border-radius: 17px;
         outline: 2px solid #ff6347;
@@ -1285,7 +1285,12 @@ cursor: pointer;
     border-left: 3px solid rgb(214, 52, 52);
     width: 100%;
 }
-
+#item1 {
+    height: 300px;
+    width: auto;
+    border-radius: 15px;
+    outline: 2px solid #ffc001;;
+}
 .meet{
     font-size: 23px;
     margin-left: 50px;

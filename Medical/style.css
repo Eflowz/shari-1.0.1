@@ -232,60 +232,6 @@
     .row .socialIcons i:hover{
         color: #ffbf0099;
     }
-
-
-
-
-
-    
-  /* responsiveness for navbar */
-/*   
-  @media only screen and (max-width: 1100px) {
-    .main {
-    display: flex;
-    align-items: center;
-    margin-left: 280px;
-    }
-    header {
-        width: 100%;
-        padding: 0 20px;
-    }
-    nav {
-        position: absolute;
-        left: -300px;
-        top: 0;
-        z-index: 999;
-        width: 280px;
-        height: 87.8vh;
-        background-color: #fefefe;
-        transition: 0.4s ease;
-        box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.05);
-    }
-    #nav_check:checked ~ nav {
-        left: 0;
-    }
-    nav .logo {
-        display: block;
-        height: 70px;
-        display: flex;
-        align-items: center;
-        margin-left: 30px;
-    }
-    nav ul li a {
-        margin-bottom: 5px;
-        padding: 10px 15px;
-        border-radius: 5px;
-    }
-    nav ul {
-        display:block;
-        padding: 0 20px;
-        margin-top: 30px;
-    }
-    .hamburger {
-        display: block;
-    }
-  }*/
-
     
     @media (max-width: 768px) {
     header {
@@ -520,6 +466,83 @@ color: white;
 }
 }
 
+@media (min-width: 376px) and (max-width: 424px) {    
+    .logo {
+        width: 60px;
+        height: 90px;
+        position: absolute;
+        left: 2.7%;
+        margin-top: 10px;
+    }
+    
+nav {
+    position: absolute;
+    left: -400px;
+    top: 0;
+    z-index: 999;
+    color: #fff;
+    width: 280px;
+    height: 105vh;
+    background-color: #03185af9;
+    transition: 0.4s ease;
+    box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.05);
+}
+#nav_check:checked ~ nav {
+    left: 0;
+}
+nav ul li a {
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+    .main {
+        display: flex;
+        width: 100%;
+        position: relative;
+        right: 45%;
+        text-align: center;
+    }
+
+    .main a {
+        margin: 0 9px ;
+        color: #fff;    
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 5px 12px 2px -1px;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+        align-content: center;
+        font-size: 13px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 3.8%;
+        margin-top: 3px;
+    }
+
+    .hamburger + .main {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        margin: 0;
+        padding: 10px 20px;
+    }
+    
+    .hamburger.active + nav ul {
+        display: flex;
+    }
+}
 
 @media only screen and (max-width: 375px) {
 
@@ -587,7 +610,75 @@ nav ul li a {
 .hamburger.active + nav ul {
     display: flex;
 }
+}
 
+@media (min-width: 321px) and (max-width: 375px) {    
+    
+    .logo {
+        width: 60px;
+        height: 90px;
+        position: absolute;
+        left: 2.7%;
+        margin-top: 10px;
+    }
+    .main {
+        display: flex;
+        width: 100%;
+        position: relative;
+        right: 50%;
+        text-align: center;
+    }
+
+    .main a {
+        margin: 0 9px ;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 5px 12px 2px -1px;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+        align-content: center;
+        font-size: 10px;
+    }
+    nav {
+        position: absolute;
+        left: -400px;
+        top: 0;
+        z-index: 999;
+        width: 270px;
+        height: 105vh;
+        background-color: #03185af9;
+        transition: 0.4s ease;
+        box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.05);
+    }
+    #nav_check:checked ~ nav {
+        left: 0;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 3.8%;
+        margin-top: 3px;
+    }
+
+    .hamburger + .main {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        margin: 0;
+        padding: 10px 20px;
+    }
+    
+    .hamburger.active + nav ul {
+        display: flex;
+    }
 }
 
 @media only screen and (max-width: 320px) {

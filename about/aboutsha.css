@@ -318,11 +318,12 @@
     }
     .meet{
       font-size: 40px;
-      margin-left: 400px;
+      margin-left: 490px;
+      margin-top: 30px;
       margin-bottom: 10px;
   }
     .card-container{
-        padding-block: 5rem;
+        padding-block: 2rem;
     }
     .card-content{
         margin-inline: 3.75rem;
@@ -629,76 +630,81 @@
   @media only screen and (max-width: 425px) {
     
     .logo {
-        width: 60px;
-        height: 90px;
-        position: absolute;
-        left: 2.7%;
-        margin-top: 10px;
-    }
-    
+      width: 60px;
+      height: 90px;
+      position: absolute;
+      left: 2.7%;
+      margin-top: 10px;
+  }
+  
 nav {
-    position: absolute;
-    left: -400px;
-    top: 0;
-    z-index: 999;
-    color: #fff;
-    width: 280px;
-    height: 105vh;
-    background-color: #03185af9;
-    transition: 0.4s ease;
-    box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.05);
+  position: absolute;
+  left: -400px;
+  top: 0;
+  z-index: 999;
+  color: #fff;
+  width: 280px;
+  height: 105vh;
+  background-color: #03185af9;
+  transition: 0.4s ease;
+  box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.05);
 }
 #nav_check:checked ~ nav {
-    left: 0;
+  left: 0;
 }
 nav ul li a {
-    margin-bottom: 5px;
-    padding: 10px 15px;
-    border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
 
-    .main {
-        display: flex;
-        width: 100%;
-        position: relative;
-        right: 30%;
-        text-align: center;
-    }
+  .main {
+      display: flex;
+      width: 100%;
+      position: relative;
+      right: 30%;
+      text-align: center;
+  }
 
-    .main a {
-        margin: 0 9px ;
-        color: #fff;    
-        margin-top: 30px;
-        margin-bottom: 30px;
-        padding: 5px 12px 2px -1px;
-        text-align: center;
-        justify-content: center;
-        align-self: center;
-        align-content: center;
-        font-size: 13px;
-    }
-    .hamburger {
-        display: block;
-        position: absolute;
-        right: 3.8%;
-        margin-top: 3px;
-    }
-    .hamburger + .main {
-        display: flex;
-        align-items: center;
-        width: 100%;
-    }
-    nav ul li {
-        margin: 10px 0;
-    }
+  .main a {
+      margin: 0 9px ;
+      color: #fff;    
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 5px 12px 2px -1px;
+      text-align: center;
+      justify-content: center;
+      align-self: center;
+      align-content: center;
+      font-size: 13px;
+  }
 
-    nav ul li a {
-        margin: 0;
-        padding: 10px 20px;
-    } 
-    .hamburger.active + nav ul {
-        display: flex;
-    }
+  .hamburger {
+      display: block;
+      position: absolute;
+      right: 3.8%;
+      margin-top: 3px;
+  }
+
+  .hamburger + .main {
+      display: flex;
+      align-items: center;
+      width: 100%;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  nav ul li a {
+      margin: 0;
+      padding: 10px 20px;
+  }
+  
+  .hamburger.active + nav ul {
+      display: flex;
+  }
+
 
     .bout {
     margin-top: 30px;
@@ -969,25 +975,48 @@ color: white;
 }
 
 
-@media only screen and (max-width: 375px) {
+@media (min-width: 376px) and (max-width: 424px) {    
 
-.logo {
+  .logo {
     width: 60px;
     height: 90px;
     position: absolute;
     left: 2.7%;
     margin-top: 10px;
 }
+
+nav {
+position: absolute;
+left: -400px;
+top: 0;
+z-index: 999;
+color: #fff;
+width: 280px;
+height: 105vh;
+background-color: #03185af9;
+transition: 0.4s ease;
+box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.05);
+}
+#nav_check:checked ~ nav {
+left: 0;
+}
+nav ul li a {
+margin-bottom: 5px;
+padding: 10px 15px;
+border-radius: 5px;
+}
+
 .main {
     display: flex;
     width: 100%;
     position: relative;
-    right: 42%;
+    right: 45%;
     text-align: center;
 }
 
 .main a {
     margin: 0 9px ;
+    color: #fff;    
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 5px 12px 2px -1px;
@@ -995,22 +1024,9 @@ color: white;
     justify-content: center;
     align-self: center;
     align-content: center;
-    font-size: 10px;
+    font-size: 13px;
 }
-nav {
-    position: absolute;
-    left: -400px;
-    top: 0;
-    z-index: 999;
-    width: 270px;
-    height: 105vh;
-    background-color: #03185af9;
-    transition: 0.4s ease;
-    box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.05);
-}
-#nav_check:checked ~ nav {
-    left: 0;
-}
+
 .hamburger {
     display: block;
     position: absolute;
@@ -1023,6 +1039,7 @@ nav {
     align-items: center;
     width: 100%;
 }
+
 nav ul li {
     margin: 10px 0;
 }
@@ -1038,11 +1055,82 @@ nav ul li a {
 
 .meet{
 font-size: 23px;
-margin-left: 70px;
+margin-left: 60px;
 }
 }
 
-@media only screen and (max-width: 320px) {
+
+@media (min-width: 321px) and (max-width: 375px) {    
+  .logo {
+      width: 60px;
+      height: 90px;
+      position: absolute;
+      left: 2.7%;
+      margin-top: 10px;
+  }
+  .main {
+      display: flex;
+      width: 100%;
+      position: relative;
+      right: 48%;
+      text-align: center;
+  }
+
+  .main a {
+      margin: 0 9px ;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 5px 12px 2px -1px;
+      text-align: center;
+      justify-content: center;
+      align-self: center;
+      align-content: center;
+      font-size: 10px;
+  }
+  nav {
+      position: absolute;
+      left: -400px;
+      top: 0;
+      z-index: 999;
+      width: 270px;
+      height: 105vh;
+      background-color: #03185af9;
+      transition: 0.4s ease;
+      box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  #nav_check:checked ~ nav {
+      left: 0;
+  }
+  .hamburger {
+      display: block;
+      position: absolute;
+      right: 3.8%;
+      margin-top: 3px;
+  }
+
+  .hamburger + .main {
+      display: flex;
+      align-items: center;
+      width: 100%;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  nav ul li a {
+      margin: 0;
+      padding: 10px 20px;
+  }
+  
+  .hamburger.active + nav ul {
+      display: flex;
+  }
+}
+
+
+@media (min-width: 310px) and (max-width: 320px) {    
+
 
 .logo {
     width: 60px;

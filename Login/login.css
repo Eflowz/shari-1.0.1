@@ -13,7 +13,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     background-color: #dbc90b;
-    background-image: url(logo.png);
+    background-image: url(../img/logo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

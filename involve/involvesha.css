@@ -611,7 +611,9 @@ color: white;
 }
 
 
-@media only screen and (max-width: 375px) {
+
+
+@media (min-width: 376px) and (max-width: 424px) {    
 
 .logo {
   width: 60px;
@@ -620,25 +622,7 @@ color: white;
   left: 2.7%;
   margin-top: 10px;
 }
-.main {
-  display: flex;
-  width: 100%;
-  position: relative;
-  right: 42%;
-  text-align: center;
-}
 
-.main a {
-  margin: 0 9px ;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 5px 12px 2px -1px;
-  text-align: center;
-  justify-content: center;
-  align-self: center;
-  align-content: center;
-  font-size: 10px;
-}
 nav {
   position: absolute;
   left: -400px;
@@ -672,6 +656,25 @@ nav ul li {
 nav ul li a {
   margin: 0;
   padding: 10px 20px;
+}
+.main {
+  display: flex;
+  width: 100%;
+  position: relative;
+  right: 45%;
+  text-align: center;
+}
+
+.main a {
+  margin: 0 9px ;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 5px 12px 2px -1px;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  font-size: 10px;
 }
 
 .hamburger.active + nav ul {
@@ -742,8 +745,141 @@ transform: rotate(90deg);
 }
 }
 
-@media only screen and (max-width: 320px) {
 
+
+@media (min-width: 321px) and (max-width: 375px) {    
+    
+  .logo {
+      width: 60px;
+      height: 90px;
+      position: absolute;
+      left: 2.7%;
+      margin-top: 10px;
+  }
+  .main {
+      display: flex;
+      width: 100%;
+      position: relative;
+      right: 48%;
+      text-align: center;
+  }
+
+  .main a {
+      margin: 0 9px ;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 5px 12px 2px -1px;
+      text-align: center;
+      justify-content: center;
+      align-self: center;
+      align-content: center;
+      font-size: 10px;
+  }
+  nav {
+      position: absolute;
+      left: -400px;
+      top: 0;
+      z-index: 999;
+      width: 270px;
+      height: 105vh;
+      background-color: #03185af9;
+      transition: 0.4s ease;
+      box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  #nav_check:checked ~ nav {
+      left: 0;
+  }
+  .hamburger {
+      display: block;
+      position: absolute;
+      right: 3.8%;
+      margin-top: 3px;
+  }
+
+  .hamburger + .main {
+      display: flex;
+      align-items: center;
+      width: 100%;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  nav ul li a {
+      margin: 0;
+      padding: 10px 20px;
+  }
+  
+  .hamburger.active + nav ul {
+      display: flex;
+  }
+  
+.star .container p{
+  flex-wrap: wrap;
+  padding: 20px 19px;
+  align-content: center;
+  justify-content: center;
+  width: auto;
+  font-size: 15px;
+}
+.rotate-border {
+  position: relative;
+  margin-left: 40px;
+  color: #2a4291f9;
+  text-align: center;
+  font-size: 18px;
+}
+.rotate-border::before {
+  content: ""; 
+  position: absolute; 
+  top: 35%; 
+  left: 10px; 
+  width: 2px; 
+  height: 30px; 
+  background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(212, 0, 135), rgb(212, 255, 255));
+  transform-origin: top left; 
+  transform: rotate(90deg); 
+}
+.colabo {
+  position: relative;
+  margin-left: 40px;
+  color: #2a4291f9;
+  text-align: center;
+  font-size: 18px;
+}
+.colabo::before {
+content: ""; 
+position: absolute; 
+top: 25%; 
+  left: 10px; 
+  width: 2px; 
+  height: 30px; 
+background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(212, 0, 135), rgb(212, 255, 255));
+transform-origin: top left; 
+transform: rotate(90deg); 
+}
+.investo {
+  position: relative;
+  margin-left: 40px;
+  color: #2a4291f9;
+  text-align: center;
+  font-size: 18px;
+}
+.investo::before {
+content: ""; 
+position: absolute; 
+top: 25%; 
+  left: -2px; 
+  width: 2px; 
+  height: 30px; 
+background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(212, 0, 135), rgb(212, 255, 255));
+transform-origin: top left; 
+transform: rotate(90deg); 
+}
+}
+
+@media only screen and (max-width: 320px) {
 .logo {
   width: 60px;
   height: 90px;
